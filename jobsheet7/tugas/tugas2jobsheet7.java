@@ -22,7 +22,7 @@ public class tugas2jobsheet7 {
                     total += durasi * 2000;
                 }
             }
-
+// asd
         } while (jenis != 0);
 
         System.out.println("Total pembayaran parkir: Rp " + total);

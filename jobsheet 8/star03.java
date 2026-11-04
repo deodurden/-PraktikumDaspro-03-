@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Star03 {
+public class star03 {
     public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
 
@@ -23,4 +23,4 @@ public class Star03 {
 }
 
 
-}
+

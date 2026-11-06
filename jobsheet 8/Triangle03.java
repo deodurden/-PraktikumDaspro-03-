@@ -4,10 +4,8 @@ public class Triangle03 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan nilai n = ");
         int n = sc.nextInt();
-
         int i = 1;
         while (i <= n) {
-
             int j = 1;
             while (j <= i) {
                 System.out.print("*");
@@ -16,7 +14,6 @@ public class Triangle03 {
             System.out.println();
             i++;
         }
-        sc.close();
         
     }
     

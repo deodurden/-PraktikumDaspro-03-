@@ -5,8 +5,8 @@ public class ArrayBilangan03 {
         int[] bil = {5, 13, -7, 17};
        
 
-        for (int nilai : bil) {
-            System.out.println(nilai);
+        for (int i = 0; i <= 4; i++) {
+            System.out.println("bil[" + i + "] = " + bil[i] + ", double = " + (bil[i] * 2));
         }
 
         System.out.println(Arrays.toString(bil));

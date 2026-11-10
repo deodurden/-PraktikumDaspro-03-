@@ -22,10 +22,7 @@ public class DanaPenghargaan03 {
         System.out.print("masukkan peringkat juara (1/2/3, isi 0 jika bukan juara): ");
         peringkat = input.nextInt();
 
-        System.out.print("masukkan status pendanaan PKM (1=lolos, 0=tidak): ");
-        statusPKM = input.nextInt();
-
-        System.out.println("\n=== HASIL VALIDASI ===");
+        System.out.println("=== HASIL VALIDASI ===");
         System.out.println("Nama mahasiswa : " + nama);
 
         if (jenisKegiatan.equalsIgnoreCase("BELMAWA") ||
@@ -45,6 +42,33 @@ public class DanaPenghargaan03 {
             }
 
             
+        } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+
+            if (statusPKM == 1) {
+                System.out.print("masukkan status pendanaan PKM (1=lolos, 0=tidak): ");
+                statusPKM = input.nextInt();
+
+
+    
+
+                if (jumlahDokumen == 4) {
+                    System.out.println("Status dana : MENDAPATKAN DANA PENGHARGAAN");
+                    System.out.println("Alasan : PKM lolos pendanaan dan dokumen lengkap.");
+                } else {
+                    System.out.println("Status dana : TIDAK MENDAPATKAN DANA PENGHARGAAN");
+                    System.out.println("Alasan : Dokumen tidak lengkap.");
+                    System.out.println("Dokumen yang masih kurang : " + (4 - jumlahDokumen));
+                }
+
+            } else {
+                System.out.println("Status dana : TIDAK MENDAPATKAN DANA PENGHARGAAN");
+                System.out.println("Alasan : PKM tidak lolos pendanaan.");
+            }
+
+        } else {
+            System.out.println("Status dana : TIDAK MENDAPATKAN DANA PENGHARGAAN");
+            System.out.println("Alasan : Jenis kegiatan Lainnya tidak memperoleh dana penghargaan.");
         }
     }
 }
+    
